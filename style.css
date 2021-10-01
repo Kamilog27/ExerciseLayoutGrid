@@ -1,0 +1,40 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    height:100vh;
+    width: 100vw;
+}
+.maincontainer{
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: 10% 70% 20% ;
+    grid-template-areas: 
+        "h h h"
+        "aso m ast"
+        "aso f ast";
+    height:100%;
+    width:100%;
+    background-color: darkgray;
+}
+.head{
+    grid-area: h;
+    background:rgb(255, 72, 72);
+}
+.aside1{
+    grid-area: aso;
+    background:rgb(189, 150, 49);
+}
+.main{
+    grid-area: m;
+    background:rgb(62,136, 61);
+}
+.aside2{
+    grid-area: ast;
+    background:rgb(45,168, 194);
+}
+.footer{
+    grid-area: f;
+    background:rgb(33,73, 174);
+}
